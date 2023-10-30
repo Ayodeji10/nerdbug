@@ -1,0 +1,160 @@
+@import "./_mixins";
+
+.home {
+  background-color: #f5f4f4;
+  padding: 30px 0;
+  min-height: 100vh;
+  .city-card {
+    background-color: #fff;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+      inset 0 0 0 1px hsla(0, 0%, 100%, 0.05);
+    margin-bottom: 20px;
+    button {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 25px;
+      width: 25px;
+      border: none;
+      border-radius: 50%;
+      i {
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+    h2 {
+      @include text(20px, 600, #000, 5px);
+    }
+    h3 {
+      @include text(14px, 400, rbga(0, 0, 0, 0.5), 0);
+    }
+    img {
+      height: 50px;
+    }
+    h4 {
+      @include text(45px, 500, black, 0);
+    }
+    h5 {
+      @include text(16px, 400, black, 5px);
+    }
+    p {
+      @include text(12px, 400, rgba(0, 0, 0, 0.5), 0);
+    }
+  }
+}
+
+.single-city {
+  background-color: #f5f4f4;
+  padding: 30px 0;
+  min-height: 100vh;
+  input {
+    border: none;
+    outline: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.4);
+    background-color: transparent;
+    margin-bottom: 30px;
+    width: 300px;
+  }
+  .back {
+    font-size: 20px;
+    margin-bottom: 20px;
+    i {
+      margin-right: 10px;
+    }
+  }
+  i.fa-heart {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  header {
+    h2 {
+      @include text(30px, 500, black, 0);
+    }
+    p {
+      @include text(18px, 400, black, 5px);
+    }
+    h3 {
+      @include text(22px, 500, black, 5px);
+    }
+    h4 {
+      @include text(18px, 400, black, 0);
+      display: inline-block;
+      background-color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2),
+        0 2px 4px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px hsla(0, 0%, 100%, 0.05);
+      i {
+        margin-right: 5px;
+      }
+    }
+    .details {
+      p {
+        @include text(14px, 400, rgba(0, 0, 0, 0.5), 10px);
+      }
+      h6 {
+        @include text(22px, 500, black, 15px);
+      }
+    }
+  }
+  .day {
+    .date {
+      background-color: #fff;
+      padding: 5px 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2),
+        0 2px 4px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px hsla(0, 0%, 100%, 0.05);
+    }
+    .forcast {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      min-width: 113px;
+      max-width: 120px;
+      h6 {
+        @include text(12px, 400, black, 0);
+      }
+      h3 {
+        @include text(12px, 400, black, 10px);
+      }
+    }
+  }
+  .note {
+    margin-top: 20px;
+    label {
+      display: block;
+      @include text(14px, 500, black, 10px);
+    }
+    textarea {
+      border-radius: 5px;
+      padding: 15px;
+      border: none;
+      width: 100%;
+      min-height: 150px;
+      margin-bottom: 15px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    button {
+      background-color: #000;
+      border-radius: 5px;
+      color: #fff;
+      padding: 10px 25px;
+      outline: none;
+    }
+  }
+}
+
+// media queries
+@media (min-width: 575px) and (max-width: 999px) {
+  .home {
+    .city-card {
+      h4 {
+        @include text(25px, 500, black, 5px);
+      }
+    }
+  }
+}

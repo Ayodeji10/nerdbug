@@ -1,0 +1,17 @@
+export const landingCities = [
+  { name: "Shanghai", lat: "31.22222", lon: "121.45806" },
+  { name: "Lagos", lat: "6.45407", lon: "3.39467" },
+  { name: "Beijing", lat: "39.9075", lon: "116.39723" },
+  { name: "Istanbul", lat: "41.01384", lon: "28.94966" },
+  { name: "Shenzhen", lat: "22.54554", lon: "114.0683" },
+  { name: "Mumbai", lat: "19.07283", lon: "72.88261" },
+  { name: "Sao Paulo", lat: "-23.5475", lon: "-46.63611" },
+  { name: "Delhi", lat: "28.65195", lon: "77.23149" },
+  { name: "Moscow", lat: "55.75222", lon: "37.61556" },
+  { name: "Guangzhou", lat: "23.11667", lon: "113.25" },
+  { name: "Dhaka", lat: "23.7104", lon: "90.40744" },
+  { name: "Seoul", lat: "37.566", lon: "126.9784" },
+  { name: "Cairo", lat: "30.06263", lon: "31.24967" },
+  { name: "London", lat: "51.50853", lon: "-0.12574" },
+  { name: "Hong Kong", lat: "22.27832", lon: "114.17469" },
+];
